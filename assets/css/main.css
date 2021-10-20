@@ -99,8 +99,8 @@ input, select, textarea {
 	}
 
 	body {
-		--primaryFade: #88a39a 85%;
-		--secondaryFade: #8f9992 15%;
+		--primaryFade: #8ea19b 85%;
+		--secondaryFade: #919692 15%;
 		
 		background-color: #415e9b;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, var(--secondaryFade), var(--primaryFade));
