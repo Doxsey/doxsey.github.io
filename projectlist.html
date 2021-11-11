@@ -28,13 +28,14 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="#atmel" class="active">Atmel/Arduino</a></li>
-							<li><a href="#first">Skill Set</a></li>
-							<li><a href="#second">Sample C# Project</a></li>
+							<li><a href="#pic">Microchip PIC</a></li>
+							<li><a href="#misc">Misc. Projects</a></li> 
 							<li><a href="#third">List of Projects</a></li>
 							<!-- <li><a href="#cta">Get Started</a></li> -->
 						</ul>
 					</nav>
 
+					<!-- Misc projects: servers, etching PCBs,  -->
 
 				<!-- Main -->
 					<div id="main">
@@ -44,7 +45,7 @@
 							<div class="content">
 								<header class="major">
 									<h2>Atmel/Arduino</h2>
-									<p>Project overviews related to the Arduino or Atmel microcontrollers. </p>
+									<p>Projects related to the Arduino or Atmel microcontrollers. </p>
 								</header>
 
 								<p class="content"> 
@@ -71,26 +72,55 @@
 										</ul>
 
 										<hr />
-
-
-
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<ul>
-													<li>Fan Controller for A/V Cabinet</li>
-														<li style="margin-left:2em">Custom fan controller for venting an A/V closet</li>
-													<li>HVAC Controller for Wood Burning Boiler</li>
-														<li style="margin-left:2em">Custom fan controller for venting an A/V closet</li>
-													<li>Police Helmet?</li>
-													<li>Unkown</li>
-												</ul>
-											</div>
-										</div>
+										
 									</section>
 								</p>
 							</div>
 							<!-- <span class="image"><img src="images/pic01.jpg" alt="" /></span> -->
 						</section>
+
+						<!-- Microchip PIC -->
+						<section id="pic" class="main">
+							<div class="content">
+								<header class="major">
+									<h2>Microchip PIC</h2>
+									<p>Projects related to the Microchip PIC microcontrollers. </p>
+								</header>
+
+								<p class="content"> 
+									<!-- Lists -->
+									<section>
+										<h2>Project List</h2>
+										<ul class="alt">
+											<li><strong>Power Meter</strong> 
+												<p>As part of a school assignment, we were required to design a system that utilizes the Microchip PIC18 microcontroller. We worked in teams of 2 and had to deliver a working product by the end of the semester. My partner and I settled on creating a power meter for 120V AC measurement, similar to a “Kill A Watt” product.</p>
+												<p>We utilized a PIC18F microcontroller, a hall-effect sensor for current measurement, an op-amp circuit for filtering and amplification, an LCD screen for display, buttons for user input, and step-down transformer circuits for power and voltage measurement. The PIC would sample both the current and voltage on regular intervals (via intterupts) and display that information on the LCD screen. Based on user input, the LCD screen would display power usage, line voltage, or current usage.</p>
+												<p>By the end of the semester, we were able to deliver a working power meter that was as accurate (if not more accurate) than a purchased, low-end power meter.</p>
+											</li>
+
+											<li><strong>Stepper Motor Controller</strong>
+												<!-- <p>Background on the Need for this System </p> -->
+												<p >As another school project, we were asked to create a controller for a 5-wire stepper motor. We used a PIC18F452 microcontroller and a ULN2068b Darlington driver to drive the stepper motor. The user was able to control the direction and speed of the rotation via a potentiometer. The PIC would advance to the next step of the stepper motor rotation based on an interrupt with the timing of the interrupt determined by the user.</p>
+												<p >The stepper motors that were given to us were lacking in documentation and produced rough operation based on the information supplied to us. Throughout this project, teams were getting stepper motor operation that was unreliable and “jerky”. These results were deemed acceptable by the lab instructor, but my partner and I believed that the (assumed) layout of the stepper motors was incorrect. After several hours of testing, we were able to prove our theory correct. We were able to determine that the assumed layout of the stepper motor was incorrect and determined the correct control strategy. The lab instructor told us that our stepper motor control was the smoothest operation he has seen in that lab.</p>
+												
+											</li>
+
+
+										</ul>
+
+										<hr />
+										
+									</section>
+								</p>
+							</div>
+							<!-- <span class="image"><img src="images/pic01.jpg" alt="" /></span> -->
+						</section>
+
+
+
+
+
+
 
 						<!-- Content -->
 							<section id="content" class="main">
